@@ -1,0 +1,24 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagina {
+  background-color: gold;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.pagina * {
+  margin: 1%;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
