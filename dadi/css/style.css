@@ -19,8 +19,22 @@
 }
 
 .dadi {
-  width: 50%;
   display: flex;
-  justify-content: space-around;
   margin: 50px;
+}
+
+.dadi * {
+  margin: 20px;
+}
+
+#giocatore{
+  background-color: white;
+}
+
+#banco {
+  background-color: grey;
+}
+
+#esito {
+  background-color: lightgreen;
 }
