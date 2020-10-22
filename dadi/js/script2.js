@@ -1,17 +1,20 @@
-// numero casuale giocatore 1
+//  chi tra pc e utente ha ricavato il numero random più alto
+button.addEventListener('click',
+  function (){
+    var giocatore = Math.floor(Math.random() * 6) + 1;
+    console.log("Hai fatto: ", giocatore);
+    var banco = Math.floor(Math.random() * 6) + 1;
+    console.log("Tu hai fatto: ", banco);
 
-var random_number1 = function(){
-   return Math.floor(Math.random() * 6) + 1;
-};
-document.getElementById('button_text1').onclick = function () {
-    document.getElementById("input_box1").innerHTML = random_number();
-};
+    document.getElementById('giocatore').innerHTML = "Giocatore: " + giocatore;
+    document.getElementById('banco').innerHTML = "Banco: " + banco;
 
-// numero casuale giocatore 2
+    if (giocatore > banco) {
+      document.getElementById('esito').innerHTML = "Complimenti, HAI VINTO!"
+    } else if (banco > giocatore) {
+      document.getElementById('esito').innerHTML = "Peccato, HAI PERSO!"
+    } else {
+      document.getElementById('esito').innerHTML = "Pareggio! Non vince nessuno!"
+    }
 
-var random_number2 = function(){
-   return Math.floor(Math.random() * 6) + 1;
-};
-document.getElementById('button_text2').onclick = function () {
-    document.getElementById("input_box2").innerHTML = random_number();
-};
+})

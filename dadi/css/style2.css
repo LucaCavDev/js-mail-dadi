@@ -1,0 +1,51 @@
+/* regole generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 40px;
+  color: blue;
+}
+
+.pagina {
+  background-image: url("../img/money.jpg");
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.dadi {
+  background-color: gold;
+  min-height: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.bottoni {
+  background-color: gold;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#button {
+  padding: 5px;
+  border: 5px dotted red;
+}
+
+.fine {
+  background-color: gold;
+  min-height: 200px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

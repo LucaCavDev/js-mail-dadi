@@ -18,7 +18,7 @@ if(giocatore > banco){
   document.getElementById('esito').innerHTML = "Complimenti! Hai vinto!";
 }
 else if(banco > giocatore) {
-  document.getElementById('esito').innerHTML = "Peccato! Vince il Banco :'(";
+  document.getElementById('esito').innerHTML = "Peccato, HAI PERSO!";
 }
 else {
   document.getElementById('esito').innerHTML = "Pareggio! Non vince nessuno!";
